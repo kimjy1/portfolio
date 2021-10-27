@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 1100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 140px;
+  height: 80px;
+  float: left;
+  margin: 0px;
+}
+
+.logo img {
+  float: left;
+  margin: 0 0 0 20px;
+  width: 200px;
+  height: 100px;
+}
+
+nav {
+  width: 750px;
+  height: 30px;
+  float: right;
+  margin: 20px 30px 50px 0px;
+}
+
+nav ul {
+  font-weight: bold;
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  margin: 5px 50px 0px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+.icon{position: relative; top: -35px; left: 450px; margin: 0 auto; 
+  width: 300px; height:0px;}
+  .icon img{width: 30px; height: 30px; margin: 0 0 0 7px;}
+
+
+
+
+footer {
+  width: 1100px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+footer img {
+  width: 1100px;
+  height: 150px;
+  border-top: 1px solid #333;
+}
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+footer ul li {
+  float: left;
+  margin: 0 0 0 50px;
+  position: relative;
+  top: -150px;
+  left: -50px;
+  font-size: 12px;
+  list-style: none;
+}
+
+.footred {
+  color: red;
+  font-weight: bold;
+}
+
+.footli {
+  font-weight: bold;
+}
+
+footer ul {
+  line-height: 22px;
+}

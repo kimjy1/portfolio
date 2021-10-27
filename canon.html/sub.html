@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sub Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		#slider {
+			width: 1100px;
+			height: 800px;
+			background-color: #f7f7f7;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		#slider>div {
+			display: inline-block;
+		}
+
+		.sbox1 {
+			width: 140px;
+			height: 750px;
+			background-color: black;
+			margin: 20px;
+			background-image: url('img/sub_film.png'), url('img/sub_film.png');
+			background-repeat: repeat-y;
+			background-position: left top, right top;
+			background-size: 15px;
+		}
+
+
+		.sbox1>.imgbox {
+			width: 100px;
+			height: 100px;
+			margin: 20px;
+		}
+
+		.sbox1>.imgbox>img {
+			width: 100px;
+			height: 100px;
+			cursor: pointer;
+		}
+
+		.sbox2 {
+			width: 420px;
+			height: 300px;
+			position: absolute;
+			top: 150px;
+			left: 195px;
+		}
+
+		.sbox2 .subback2,
+		.subetc2,
+		.subno2,
+		.subtop2,
+		.subbottom2 {
+			display: none;
+		}
+
+
+		.sbox3 {
+			width: 420px;
+			height: 700px;
+			position: absolute;
+			top: 50px;
+			right: 30px;
+			border-radius: 10px;
+			background-color: #fff;
+		}
+
+		.sbox3 h1 {
+			margin: 20px 40px;
+			text-align: left;
+		}
+
+		.sbox3 p {
+			margin: 0 0 20px 40px;
+		}
+
+		.sbox3 span {
+			background-color: red;
+			color: #fff;
+			padding: 20px;
+			display: inline-block;
+			margin: 20px
+		}
+
+		.sbox3 .boldtext {
+			font-weight: bold;
+			height: 3em;
+			width: 6em;
+			font-size: 16px;
+		}
+
+		.sbox3 .lighttext {
+			font-size: 14px;
+		}
+
+		.sbox3 #price1 {
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.sbox3 #salecoupon {
+			font-weight: bold;
+		}
+
+		.sbox3 .coupon {
+			font-size: 12px;
+			background-color: #fff;
+			display: inline-block;
+			color: red;
+			font-weight: bold;
+			padding: 5px 25px;
+			background-image: url('img/sub_download.png');
+			background-repeat: no-repeat;
+			background-position: left;
+			cursor: pointer;
+		}
+
+		.sbox3 .coupon:hover {
+			background-color: gold;
+			font-size: 14px;
+		}
+
+		.sbox3 .quantity {
+			background-color: white;
+			display: block;
+			color: black;
+			margin: 0;
+		}
+
+		.sbox3 .quantity>span {
+			margin: 0;
+			box-sizing: content-box;
+			padding: 0;
+			width: 40px;
+			height: 30px;
+			text-align: center;
+			font-size: 18px;
+			background-color: white;
+			color: black;
+			border: 1px solid #666;
+		}
+
+		.sbox3 .quantity>button {
+			width: 30px;
+			height: 32px;
+			cursor: pointer;
+			background-color: white;
+			border: 1px solid #666;
+			font-size: 18px;
+		}
+
+		.sbox3>a>.buy {
+			color: white;
+			background-color: black;
+			border-radius: 30px;
+			padding: 10px 50px;
+			display: inline-block;
+			font-weight: bold;
+		}
+
+		.sbox3>a>.buy2 {
+			border-radius: 30px;
+			border: 1px solid #666;
+			color: black;
+			background-color: white;
+			padding: 10px 50px;
+			display: inline-block;
+			font-weight: bold;
+		}
+		#noname1 {
+			background-color: khaki;
+			width: 1100px;
+			height: 2500px;
+			margin: 0 auto;
+		}
+
+		#noname1>.stik {
+			position: sticky;
+			top: 0;
+			background-color: cadetblue;
+			width: 1100px;
+			height: 100px;
+		}
+
+		#noname1>.stik>.navanchor {
+			width: 550px;
+			height: 40px;
+			background-color: crimson;
+			margin: 30px 20px;
+		}
+
+		.navanchor li {
+			margin: 0 0 0 17px;
+		}
+
+		.navanchor li a {
+			font-size: 14px;
+			line-height: 40px;
+		}
+
+		.navanchor li a:hover {
+			color: white;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$('.subfront1').click(function () {
+				$(".subfront2").fadeIn();
+				$(".subback2").hide();
+				$(".subetc2").hide();
+				$(".subno2").hide();
+				$(".subtop2").hide();
+				$(".subbottom2").hide();
+			});
+			$('.subback1').click(function () {
+				$(".subback2").fadeIn();
+				$(".subfront2").hide();
+				$(".subetc2").hide();
+				$(".subno2").hide();
+				$(".subtop2").hide();
+				$(".subbottom2").hide();
+			});
+
+			$('.subetc1').click(function () {
+				$(".subetc2").fadeIn();
+				$(".subfront2").hide();
+				$(".subback2").hide();
+				$(".subno2").hide();
+				$(".subtop2").hide();
+				$(".subbottom2").hide();
+			});
+
+			$('.subno1').click(function () {
+				$(".subno2").fadeIn();
+				$(".subfront2").hide();
+				$(".subback2").hide();
+				$(".subetc2").hide();
+				$(".subtop2").hide();
+				$(".subbottom2").hide();
+			});
+
+			$('.subtop1').click(function () {
+				$(".subtop2").fadeIn();
+				$(".subfront2").hide();
+				$(".subback2").hide();
+				$(".subetc2").hide();
+				$(".subno2").hide();
+				$(".subbottom2").hide();
+			});
+
+			$('.subbottom1').click(function () {
+				$(".subbottom2").fadeIn();
+				$(".subfront2").hide();
+				$(".subback2").hide();
+				$(".subetc2").hide();
+				$(".subno2").hide();
+				$(".subtop2").hide();
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.jpg" alt=""></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">제품</a></li>
+				<li><a href="#">고객지원</a></li>
+				<li><a href="#">이벤트</a></li>
+				<li><a href="#">E스토어</a></li>
+				<li><a href="#">Rchive</a></li>
+				<li><a href="#">프로</a></li>
+			</ul>
+		</nav>
+		<div class="icon">
+			<a href="#"><img src="img/facebook.jpg" alt="페이스북"></a>
+			<a href="#"><img src="img/instagram.jpg" alt="인스타그램"></a>
+			<a href="#"><img src="img/kakaostory.jpg" alt="카카오스토리"></a>
+			<a href="#"><img src="img/twitter.jpg" alt="트위터"></a>
+			<a href="#"><img src="img/youtube.jpg" alt="유튜브"></a>
+			<a href="#"><img src="img/blog.jpg" alt="블로그"></a>
+		</div>
+	</header>
+
+	<div id="slider">
+		<div class="sbox1">
+			<div class="imgbox"><img src="img/sub_front.png" alt="" class="subfront1"></div>
+			<div class="imgbox"><img src="img/sub_back.png" alt="" class="subback1"></div>
+			<div class="imgbox"><img src="img/sub_etc.png" alt="" class="subetc1"></div>
+			<div class="imgbox"><img src="img/sub_no.png" alt="" class="subno1"></div>
+			<div class="imgbox"><img src="img/sub_top.png" alt="" class="subtop1"></div>
+			<div class="imgbox"><img src="img/sub_bottom.png" alt="" class="subbottom1"></div>
+		</div>
+		<div class="sbox2">
+			<img src="img/sub_front.png" alt="" class="subfront2">
+			<img src="img/sub_back.png" alt="" class="subback2">
+			<img src="img/sub_etc.png" alt="" class="subetc2">
+			<img src="img/sub_no.png" alt="" class="subno2">
+			<img src="img/sub_top.png" alt="" class="subtop2">
+			<img src="img/sub_bottom.png" alt="" class="subbottom2">
+		</div>
+		<div class="sbox3">
+			<h1>정품 EOS R5</h1>
+			<p>풀프레임 미러리스의 혁명</p>
+			<table>
+				<tr>
+					<td class="boldtext">판매가</td>
+					<td id="price1">￦ 5,199,000</td>
+				</tr>
+				<tr>
+					<td id="salecoupon">할인쿠폰</td>
+					<td class="coupon">150,000원 할인 쿠폰받기</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="coupon">첫 구매기념쿠폰받기</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="coupon">이달의 생일쿠폰받기</td>
+				</tr>
+				<tr>
+					<td class="boldtext">무이자할부</td>
+					<td class="lighttext">최대 12 & 18 개월 무이자할부 (2021.10)</td>
+				</tr>
+				<tr>
+					<td class="boldtext">배송정보</td>
+					<td class="lighttext">이스토어 전상품 (3만원이상) 무료 배송!</td>
+				</tr>
+				<tr>
+					<td class="boldtext">평균배송일</td>
+					<td class="lighttext">오전 9시 30분 결제 기준 오후 택배발송 (휴일 및 공휴일 출고 없음)
+						- 평균 3일 내 수령
+					</td>
+				</tr>
+				<tr>
+					<td class="boldtext">제품정보</td>
+					<td class="lighttext">출시일 : 2020-07<br>제조사/제조국 : 캐논/일본</td>
+				</tr>
+			</table>
+			<span class="quantity">
+				수량
+				<button value="-">-</button>
+				<span>1</span>
+				<button type="button" value="+" onclick="alert('본 상품의 최대주문가능 수량은 1개 입니다.')">+</button>
+			</span>
+			<a href="#"><span class="buy">장바구니</span></a>
+			<a href="#"><span class="buy2">바로구매</span></a>
+		</div>
+	</div>
+	<div id="noname1">
+		<div class="stik">
+			<nav class="navanchor">
+				<ul class="anchorlist">
+					<li><a href="#">제품특징</a></li>
+					<li><a href="#">제품사양</a></li>
+					<li><a href="#">관련상품</a></li>
+					<li><a href="#">제품리뷰</a></li>
+					<li><a href="#">포토갤러리</a></li>
+					<li><a href="#">배송/취소/반품/교환</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<footer>
+		<img src="img/footerimage1.jpg" alt="풋터이미지1">
+		<ul>
+			<a href="#" class="footli">
+				<li>회사소개</li>
+			</a>
+			<a href="#">
+				<li class="footli">이용약관</li>
+			</a>
+			<a href="#">
+				<li class="footred">개인정보처리방침</li>
+			</a>
+			<a href="#">
+				<li class="footli">사이트맵</li>
+			</a>
+			<a href="#">
+				<li>캐논코리아통합사이트</li>
+			</a>
+			<a href="#">
+				<li>캐논글로벌</li>
+			</a>
+		</ul>
+		<ul class="footerul2">
+			<li>캐논코리아컨슈머이미징</li>
+			<li>대표자 : YOSHIKAI SHUNJU</li>
+			<li>사업자등록번호 : 220-87-15734</li>
+			<li>통신판매업 신고번호 : 강남11387호</li>
+		</ul>
+		<ul class="footerul2">
+			<li>주소 : 서울특별시 강남구 테헤란로 607 5층</li>
+			<li>고객센터 : 1588-8133</li>
+		</ul>
+		<ul class="footerul2">
+			<li>COPYRIGHT ⓒ
+				<span style="color: red;">KOREA CONSUMER IMAGING Inc.</span> All RIGHTS RESERVED
+			</li>
+		</ul>
+	</footer>
+</body>
+
+</html>
