@@ -37,7 +37,7 @@ nav {
   width: 750px;
   height: 30px;
   float: right;
-  margin: 20px 30px 50px 0px;
+  margin: 20px 30px 0 0;
 }
 
 nav ul {
@@ -60,7 +60,7 @@ nav ul li a:hover {
   color: red;
 }
 .icon{position: relative; top: -35px; left: 450px; margin: 0 auto; 
-  width: 300px; height:0px;}
+  width: 300px; height:0px; background-color: aqua;}
   .icon img{width: 30px; height: 30px; margin: 0 0 0 7px;}
 
 
