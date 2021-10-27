@@ -10,11 +10,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<style>
 		#slider {
 			width: 1100px;
 			height: 800px;
-			background-color: #f7f7f7;
+			background-color: white;
 			margin: 0 auto;
 			position: relative;
 		}
@@ -71,7 +74,7 @@
 			top: 50px;
 			right: 30px;
 			border-radius: 10px;
-			background-color: #fff;
+			background-color: #f7f7f7;
 		}
 
 		.sbox3 h1 {
@@ -94,12 +97,14 @@
 		.sbox3 .boldtext {
 			font-weight: bold;
 			height: 3em;
-			width: 6em;
+			width: 7em;
 			font-size: 16px;
+			text-align: left;
+			padding: 0 0 0 30px;
 		}
 
 		.sbox3 .lighttext {
-			font-size: 14px;
+			font-size: 13px;
 		}
 
 		.sbox3 #price1 {
@@ -109,11 +114,14 @@
 
 		.sbox3 #salecoupon {
 			font-weight: bold;
+			text-align: left;
+			padding: 0 0 0 30px;
 		}
 
 		.sbox3 .coupon {
 			font-size: 12px;
-			background-color: #fff;
+			border: 1px solid black;
+			background-color: white;
 			display: inline-block;
 			color: red;
 			font-weight: bold;
@@ -130,10 +138,18 @@
 		}
 
 		.sbox3 .quantity {
-			background-color: white;
+			background-color: #f7f7f7;
 			display: block;
 			color: black;
-			margin: 0;
+			margin: 20px;
+			padding: 0;
+		}
+
+		.sbox3 .quantity2 {
+			background-color: #f7f7f7;
+			display: inline-block;
+			font-weight: bold;
+			margin: 0 45px 0px 12px;
 		}
 
 		.sbox3 .quantity>span {
@@ -176,26 +192,35 @@
 			display: inline-block;
 			font-weight: bold;
 		}
-		#noname1 {
+
+		.sbox3>a>.buy2:hover{
+			background-color: red;
+			color: white;
+		}
+
+		#object1 {
 			background-color: khaki;
 			width: 1100px;
 			height: 2500px;
 			margin: 0 auto;
 		}
 
-		#noname1>.stik {
+		#object1>.stickbox {
 			position: sticky;
 			top: 0;
-			background-color: cadetblue;
+			background-color: black;
 			width: 1100px;
 			height: 100px;
 		}
 
-		#noname1>.stik>.navanchor {
+		#object1>.stickbox>.navanchor {
 			width: 550px;
 			height: 40px;
-			background-color: crimson;
-			margin: 30px 20px;
+			display: inline-block;
+			margin: 0;
+			position: absolute;
+			top: 30px;
+			right: 180px;
 		}
 
 		.navanchor li {
@@ -205,10 +230,41 @@
 		.navanchor li a {
 			font-size: 14px;
 			line-height: 40px;
+			color: white;
 		}
 
 		.navanchor li a:hover {
 			color: white;
+		}
+
+		.objecttitle {
+			width: 100px;
+			height: 50px;
+			display: inline-block;
+			line-height: 50px;
+			text-align: center;
+			margin: 20px;
+			color: white;
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		.buybtn>button {
+			background-color: white;
+			border-radius: 10px;
+			color: black;
+			width: 110px;
+			height: 30px;
+			text-align: center;
+			line-height: 20px;
+			font-size: 12px;
+			font-weight: bold;
+			float: right;
+			margin: -50px 40px 0 0;
+		}
+
+		.buybtn>button:hover {
+			cursor: pointer;
 		}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -343,7 +399,7 @@
 				</tr>
 				<tr>
 					<td class="boldtext">평균배송일</td>
-					<td class="lighttext">오전 9시 30분 결제 기준 오후 택배발송 (휴일 및 공휴일 출고 없음)
+					<td class="lighttext">오전 9시 30분 결제 기준 오후 택배발송<br> (휴일 및 공휴일 출고 없음)
 						- 평균 3일 내 수령
 					</td>
 				</tr>
@@ -353,17 +409,17 @@
 				</tr>
 			</table>
 			<span class="quantity">
-				수량
+				<div class="quantity2">수량</div>
 				<button value="-">-</button>
 				<span>1</span>
 				<button type="button" value="+" onclick="alert('본 상품의 최대주문가능 수량은 1개 입니다.')">+</button>
 			</span>
-			<a href="#"><span class="buy">장바구니</span></a>
-			<a href="#"><span class="buy2">바로구매</span></a>
+			<a href="#"><span class="buy" onclick="alert('로그인이 필요합니다.')">장바구니</span></a>
+			<a href="#"><span class="buy2" onclick="alert('로그인이 필요합니다.')">바로구매</span></a>
 		</div>
 	</div>
-	<div id="noname1">
-		<div class="stik">
+	<div id="object1">
+		<div class="stickbox">
 			<nav class="navanchor">
 				<ul class="anchorlist">
 					<li><a href="#">제품특징</a></li>
@@ -374,6 +430,14 @@
 					<li><a href="#">배송/취소/반품/교환</a></li>
 				</ul>
 			</nav>
+
+			<div class="objecttitle">
+				정품 EOS R5
+			</div>
+
+			<div class="buybtn">
+				<button type="button" onclick="alert('로그인이 필요합니다.')">바로구매</button>
+			</div>
 		</div>
 	</div>
 
