@@ -120,7 +120,7 @@
 
 		.sbox3 .coupon {
 			font-size: 12px;
-			border: 1px solid black;
+			border: 1px solid #666;
 			background-color: white;
 			display: inline-block;
 			color: red;
@@ -143,6 +143,7 @@
 			color: black;
 			margin: 20px;
 			padding: 0;
+			height: 30px;
 		}
 
 		.sbox3 .quantity2 {
@@ -159,7 +160,7 @@
 			width: 40px;
 			height: 30px;
 			text-align: center;
-			font-size: 18px;
+			font-size: 17.5px;
 			background-color: white;
 			color: black;
 			border: 1px solid #666;
@@ -199,17 +200,18 @@
 		}
 
 		#object1 {
-			background-color: khaki;
 			width: 1100px;
-			height: 2500px;
+			height: 15000px;
 			margin: 0 auto;
+			position: relative;
+			background-color: blueviolet;
 		}
 
 		#object1>.stickbox {
 			position: sticky;
 			top: 0;
-			background-color: black;
-			width: 1100px;
+			background-color: gray;
+			width: 100%;
 			height: 100px;
 		}
 
@@ -265,6 +267,69 @@
 
 		.buybtn>button:hover {
 			cursor: pointer;
+			background-color: red;
+			color: white;
+		}
+
+		.objectimg {
+			width: 1100px;
+			height: auto;
+		}
+
+		.objectimg img {
+			width: 1100px;
+			height: auto;
+		}
+
+		#object2 {
+			width: 1100px;
+			height: 935px;
+			background-color: chartreuse;
+		}
+
+		#object2 table {
+			text-align: center;
+			width: 1100px;
+		}
+
+		#object2 table td {
+			width: 50%;
+		}
+
+		#object2 .obt2table td {
+			width: 33%;
+		}
+
+		#object2 p {
+			margin: 0;
+		}
+
+		#object2 figcaption {
+			font-size: 18px;
+		}
+
+		#object3 {
+			width: 1100px;
+			height: 1100px;
+			background-color: aqua;
+		}
+
+		#object3 h1 {
+			text-align: center;
+		}
+
+		.obt3img {
+			width: 250px;
+			height: 150px;
+			background-color: brown;
+			margin: 20px 20px 20px 70px;
+			display: inline-block;
+		}
+
+		.obt3img img {
+			width: 180px;
+			height: 100px;
+			margin: 0 0 0 35px;
 		}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -323,11 +388,18 @@
 				$(".subtop2").hide();
 			});
 
+			$('.topbutton').click(function () {
+				$('html, body').animate({ scrollTop: 0 }, 600);
+				return false;
+			});
 		});
 	</script>
 </head>
 
 <body>
+	<div class="topbutton">
+		<a href="#"><img src="img/topanchor.png" alt=""></a>
+	</div>
 	<header>
 		<div class="logo">
 			<a href="index.html"><img src="img/logo.jpg" alt=""></a>
@@ -422,8 +494,8 @@
 		<div class="stickbox">
 			<nav class="navanchor">
 				<ul class="anchorlist">
-					<li><a href="#">제품특징</a></li>
-					<li><a href="#">제품사양</a></li>
+					<li><a href="#obtanchor1">제품특징</a></li>
+					<li><a href="#obtanchor2">제품사양</a></li>
 					<li><a href="#">관련상품</a></li>
 					<li><a href="#">제품리뷰</a></li>
 					<li><a href="#">포토갤러리</a></li>
@@ -437,6 +509,125 @@
 
 			<div class="buybtn">
 				<button type="button" onclick="alert('로그인이 필요합니다.')">바로구매</button>
+			</div>
+		</div>
+		<div class="objectimg">
+			<iframe width="1100" height="500" src="https://www.youtube.com/embed/fU78cXSIXe0" title="YouTube video player"
+				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+			gyroscope; picture-in-picture" allowfullscreen id="obtanchor1"></iframe>
+			<img src="img/object1.jpg" alt="">
+			<img src="img/object2.jpg" alt="">
+			<img src="img/object3.jpg" alt="">
+			<img src="img/object4.jpg" alt="">
+			<img src="img/object5.jpg" alt="">
+			<img src="img/object6.jpg" alt="">
+		</div>
+		<div id="object2">
+			<table border="1" id="obtanchor2">
+				<tr>
+					<td>형식</td>
+					<td>디지털 일안 비반사 (미러리스) AF/AE 카메라</td>
+				</tr>
+				<tr>
+					<td>렌즈 마운트</td>
+					<td>캐논 RF 마운트</td>
+				</tr>
+				<tr>
+					<td>사용 가능 렌즈</td>
+					<td>캐논 렌즈군 *<sup>1</sup></td>
+				</tr>
+				<tr>
+					<td>렌즈 초점 거리</td>
+					<td>렌즈 표기 초점 거리와 동일*<sup>2</sup></td>
+				</tr>
+			</table>
+			<p>* 1 : EF-EOS R 마운트 어댑터 사용 시 :
+				캐논 EF 렌즈 또는 EF-S 렌즈 (EF-M 렌즈 제외)<br>
+				* 2 : EF-S 렌즈 사용 시 : 렌즈 표기 초점 거리의 약 1.6배</p>
+
+			<br>
+
+			<h2>이미지 센서</h2>
+
+			<table border="1">
+				<figcaption>형식:COMS 센서</figcaption>
+				<tr>
+					<td>화면 크기</td>
+					<td>약 36.0×24.0 mm</td>
+				</tr>
+				<tr>
+					<td>유효 화소수<sup>*1*2</sup></td>
+					<td>최대 약 4,500만 화소</td>
+				</tr>
+				<tr>
+					<td>Dual Pixel COMS AF</td>
+					<td>지원</td>
+				</tr>
+			</table>
+			<p>*1 : 100,000 단위로 반올림<br>
+				*2 : RF 렌즈 또는 EF 렌즈 사용 시. 특정 렌즈 또는 이미지 처리에 따라 유효 화소수가
+				감소할 수 있습니다.
+			</p>
+
+			<br>
+
+			<h1>레코딩 시스템</h1>
+			<table border="1">
+				<tr>
+					<td>이미지 기록 형식</td>
+					<td>카메라 파일 시스템용 설계 규약 (DCF) 2.0 및 Exif 2.31<sup>*</sup> 준거</td>
+				</tr>
+			</table>
+			<p>* 시차 정보 지원</p>
+
+			<br>
+
+			<table border="1" class="obt2table">
+				<figcaption>이미지 형식 및 확장자</figcaption>
+				<tr>
+					<td colspan="2">이미지 형식</td>
+					<td>확장자</td>
+				</tr>
+				<tr>
+					<td rowspan="5">정지사진</td>
+					<td>JPEG</td>
+					<td>JPG</td>
+				</tr>
+				<tr>
+
+					<td>HEIF</td>
+					<td>HIF</td>
+				</tr>
+				<tr>
+					<td>RAW</td>
+					<td rowspan="3">CR3</td>
+				</tr>
+				<tr>
+					<td>Dual Pixel RAW</td>
+
+				</tr>
+				<tr>
+					<td>C-RAW</td>
+				</tr>
+				<tr>
+					<td rowspan="2">동영상</td>
+					<td>ALL-I, IPB</td>
+					<td>MP4</td>
+				</tr>
+				<tr>
+					<td>RAW</td>
+					<td>CRM</td>
+				</tr>
+			</table>
+			<div id="object3">
+				<h1>스피드라이트</h1>
+				<div class="obt3img"><img src="img/seller1.jpg" alt=""></div>
+				<div class="obt3img"><img src="img/seller2.jpg" alt=""></div>
+				<div class="obt3img"><img src="img/seller3.jpg" alt=""></div>
+				<div class="obt3img"><img src="img/seller4.jpg" alt=""></div>
+				<div class="obt3img"><img src="img/seller5.jpg" alt=""></div>
+				<div class="obt3img"><img src="img/seller6.jpg" alt=""></div>
+				<div class="obt3img"><img src="img/seller7.jpg" alt=""></div>
 			</div>
 		</div>
 	</div>
