@@ -201,10 +201,9 @@
 
 		#object1 {
 			width: 1100px;
-			height: 15000px;
+			height: 12400px;
 			margin: 0 auto;
 			position: relative;
-			background-color: blueviolet;
 		}
 
 		#object1>.stickbox {
@@ -284,7 +283,10 @@
 		#object2 {
 			width: 1100px;
 			height: 935px;
-			background-color: chartreuse;
+		}
+
+		#object2 h1 {
+			text-align: center;
 		}
 
 		#object2 table {
@@ -310,8 +312,7 @@
 
 		#object3 {
 			width: 1100px;
-			height: 1100px;
-			background-color: aqua;
+			height: 700px;
 		}
 
 		#object3 h1 {
@@ -321,15 +322,89 @@
 		.obt3img {
 			width: 250px;
 			height: 150px;
-			background-color: brown;
 			margin: 20px 20px 20px 70px;
 			display: inline-block;
+			box-shadow: 4px 4px 4px 2px #eee;
+			border: 1px solid #eee;
 		}
 
 		.obt3img img {
 			width: 180px;
 			height: 100px;
 			margin: 0 0 0 35px;
+			cursor: pointer;
+		}
+
+		.obt3img p {
+			text-align: center;
+			line-height: 30px;
+		}
+
+		#object4 {
+			width: 1100px;
+			height: 700px;
+		}
+
+		#object4 div {
+			width: 250px;
+			height: 300px;
+			display: inline-block;
+			margin: 20px 10px 10px 10px;
+			border: 1px solid #999;
+		}
+
+		#object4 img {
+			width: 250px;
+			height: 200px;
+			cursor: pointer;
+		}
+
+		#object4 h1 {
+			text-align: center;
+		}
+
+		#object4 p {
+			text-align: center;
+			font-size: 14px;
+			line-height: 30px;
+		}
+
+		#object5 {
+			width: 1100px;
+			height: 670px;
+		}
+
+		#object5 h1 {
+			line-height: 70px;
+		}
+
+		#object5 div {
+			width: 250px;
+			height: 250px;
+			display: inline-block;
+			margin: 10px;
+		}
+
+		#object5 img {
+			width: 250px;
+			height: 250px;
+			cursor: pointer;
+		}
+
+		#object6 {
+			width: 1100px;
+			height: 1050px;
+		}
+
+		#object6 h3 {
+			margin: 0 0 10px 5px;
+		}
+
+		#object6 p {
+			font-size: 14px;
+			margin: 0 0 0 20px;
+			color: gray;
+			line-height: 30px;
 		}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -496,10 +571,10 @@
 				<ul class="anchorlist">
 					<li><a href="#obtanchor1">제품특징</a></li>
 					<li><a href="#obtanchor2">제품사양</a></li>
-					<li><a href="#">관련상품</a></li>
-					<li><a href="#">제품리뷰</a></li>
-					<li><a href="#">포토갤러리</a></li>
-					<li><a href="#">배송/취소/반품/교환</a></li>
+					<li><a href="#obtanchor3">관련상품</a></li>
+					<li><a href="#obtanchor4">제품리뷰</a></li>
+					<li><a href="#obtanchor5">포토갤러리</a></li>
+					<li><a href="#obtanchor6">배송/취소/반품/교환</a></li>
 				</ul>
 			</nav>
 
@@ -522,8 +597,11 @@
 			<img src="img/object5.jpg" alt="">
 			<img src="img/object6.jpg" alt="">
 		</div>
+		<br id="obtanchor2">
+		<hr>
 		<div id="object2">
-			<table border="1" id="obtanchor2">
+			<h1>제품 특징</h1>
+			<table border="1">
 				<tr>
 					<td>형식</td>
 					<td>디지털 일안 비반사 (미러리스) AF/AE 카메라</td>
@@ -571,7 +649,7 @@
 
 			<br>
 
-			<h1>레코딩 시스템</h1>
+			<h2>레코딩 시스템</h2>
 			<table border="1">
 				<tr>
 					<td>이미지 기록 형식</td>
@@ -610,7 +688,7 @@
 					<td>C-RAW</td>
 				</tr>
 				<tr>
-					<td rowspan="2">동영상</td>
+					<td rowspan="2" id="obtanchor3">동영상</td>
 					<td>ALL-I, IPB</td>
 					<td>MP4</td>
 				</tr>
@@ -619,15 +697,137 @@
 					<td>CRM</td>
 				</tr>
 			</table>
+			<br><br>
+			<hr>
 			<div id="object3">
-				<h1>스피드라이트</h1>
-				<div class="obt3img"><img src="img/seller1.jpg" alt=""></div>
-				<div class="obt3img"><img src="img/seller2.jpg" alt=""></div>
-				<div class="obt3img"><img src="img/seller3.jpg" alt=""></div>
-				<div class="obt3img"><img src="img/seller4.jpg" alt=""></div>
-				<div class="obt3img"><img src="img/seller5.jpg" alt=""></div>
-				<div class="obt3img"><img src="img/seller6.jpg" alt=""></div>
-				<div class="obt3img"><img src="img/seller7.jpg" alt=""></div>
+				<h1>관련상품</h1>
+				<div class="obt3img">
+					<img src="img/seller1.jpg" alt="">
+					<p>스피드라이트 MT-26EX-RT</p>
+				</div>
+				<div class="obt3img">
+					<img src="img/seller2.jpg" alt="">
+					<p>스피드라이트 600EX II-RT</p>
+				</div>
+				<div class="obt3img">
+					<img src="img/seller3.jpg" alt="">
+					<p>스피드라이트 SPEEDLITE EL-1</p>
+				</div>
+				<div class="obt3img">
+					<img src="img/seller4.jpg" alt="">
+					<p>스피드라이트 EL-100</p>
+				</div>
+				<div class="obt3img">
+					<img src="img/seller5.jpg" alt="">
+					<p>ST-E3-RT(Ver.2)</p>
+				</div>
+				<div class="obt3img">
+					<img src="img/seller6.jpg" alt="">
+					<p>MR-14EX II</p>
+				</div>
+				<div class="obt3img">
+					<img src="img/seller7.jpg" alt="" id="obtanchor4">
+					<p>ST-E3-RT</p>
+				</div>
+			</div>
+			<hr>
+			<div id="object4">
+				<h1>제품 리뷰</h1>
+				<div>
+					<img src="img/obt4-1.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ①</p>
+				</div>
+				<div>
+					<img src="img/obt4-2.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ③</p>
+				</div>
+				<div>
+					<img src="img/obt4-3.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ③</p>
+				</div>
+				<div>
+					<img src="img/obt4-4.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ④</p>
+				</div>
+				<div>
+					<img src="img/obt4-5.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ⑤</p>
+				</div>
+				<div>
+					<img src="img/obt4-6.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ⑥</p>
+				</div>
+				<div>
+					<img src="img/obt4-7.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ⑦</p>
+				</div>
+				<div>
+					<img src="img/obt4-8.jpg" alt="">
+					<p>[DCM] EOS R5 PHOTO Technology ⑧</p>
+				</div>
+			</div>
+
+			<br><br>
+			<hr>
+
+			<div id="object5">
+				<h1 id="obtanchor5">포토갤러리</h1>
+				<div><img src="img/obt5-1.jpg" alt=""></div>
+				<div><img src="img/obt5-2.jpg" alt=""></div>
+				<div><img src="img/obt5-3.jpeg" alt=""></div>
+				<div><img src="img/obt5-4.jpg" alt=""></div>
+				<div><img src="img/obt5-5.jpg" alt=""></div>
+				<div><img src="img/obt5-6.jpg" alt=""></div>
+				<div><img src="img/obt5-7.jpg" alt=""></div>
+				<div><img src="img/obt5-8.jpg" alt=""></div>
+				<p id="obtanchor6">* 본 이미지는 EOS R5로 촬영하였으나 실제와 다를 수 있습니다.</p>
+			</div>
+
+			<hr>
+
+			<div id="object6">
+				<h1>배송/취소/반품/교환</h1>
+				<h3>배송안내</h3>
+				<p>· 배송지역 : 전국 (해외배송 불가)<br>
+					· 배송비 : 3만원 미만 상품 주문 시 배송비 2,500원<br>
+					· 배송 방법 : 일양택배 이용 (평균 배송일 : 입금확인 후 영업일 기준으로 3일)<br>
+					· 평균 배송일 : 영업일 기준으로 3일 (입금확인 후)<br>
+					 평균 배송일이란? 동일상품을 주문한 고객이 실제 인수한 배송일의 평균을 말하며,
+					· 배송가능일과 차이가 발생할 수 있습니다.<br>
+					· 휴무일 및 토/일 주문은 발송이 없으므로 배송이 늦어질 수 있으며,
+					· 그 밖의 배송지연은 별도로 공지합니다.</p>
+				<br><br><br>
+
+				<h3>주문취소/반품 안내</h3>
+				<p>· 입금확인 단계까지는 주문취소 신청이 가능하며, 상품이 출고된 이후에는 반품신청으로 진행됩니다.<br>
+					· 단순 변심이나 주문 오류로 인한 반품 배송비는 고객님이 부담하셔야 합니다. (상품 하자의 경우 제외)<br>
+					· 반품신청은 수령 후 14일 이내에 요청해 주시기 바랍니다.<br>
+					· 반품신청 시 고객님께 별도의 전화를 드릴 수 있으며, 전화상담 후에 반품이 최종 결정됩니다.<br>
+					· 반품 시에는 상품 구매 시에 사용하신 할인쿠폰이 재발급되지 않습니다.<br>
+					· 실제 반송된 상품의 상태가 다르거나 구성품이 누락된 경우 추가 반품 비용을 부담하시거나, 반품신청이 취소될 수 있습니다.<br>
+					· 반품으로 인한 환불은 반품처리 완료 후 3~7일 정도 소요됩니다. (카드사, 은행취소처리 기간 소요)</p>
+				<br><br>
+
+				<h3>교환안내</h3>
+				<p>· 상품 하자로 인한 교환 신청은 수령 후 14일 이내에 요청해 주시기 바랍니다.<br>
+					· 상품의 맞교환은 불가능하며, 먼저 불량 상품이 도착하여 판정을 받은 후 교환상품을 재발송 합니다.<br>
+					· 캐논 서포트센터에서 불량판정된 상품에 한하여 동일 상품으로 교환됩니다. (색상교환 불가)<br>
+				</p>
+
+				<br><br>
+
+				<h3>반품/교환 불가 안내</h3>
+				<p>· 수입 상품의 특성 상 포장 훼손 시 반품이 불가하며, 반드시 상품 개봉전에 대응기종 및 상품정보를 확인하시기 바랍니다.<br>
+					· 액세서리 상품의 경우, 개봉 후에는 단순 변심으로 인한 반품이 불가하오니 상품 개봉 전에 대응기종 및 관련 정보를 충분히 확인하시기 바랍니다.<br>
+					· 상품을 개봉하여 사용한 경우 (박스 상의 훼손방지스티커를 파기한 경우 포함)<br>
+					· 재판매가 불가능한 정도로 박스 및 포장이 훼손된 경우<br>
+					· 소비자의 과실로 인하여 상품에 문제가 발생한 경우 (멸실 또는 훼손)<br>
+					· 구성품이 누락된 경우<br>
+					· 캐논 서포트센터의 불량 기준에 만족하지 못하는 상품의 경우<br>
+					· 반품/교환 기간 내라도 메모리카드 포장 개봉 및 전원을 켰을 경우<br>
+					· 고객님의 사용 또는 일부 소비에 의하여 상품 등의 가치가 현저히 감소 한 경우<br>
+					· 반품/교환 신청 기간이 지난경우<br>
+					· 캐논 이스토어 반품 및 교환 신청은 [마이캐논]에서 가능하며, 궁금하신 사항은 1:1 고객문의 또는 캐논 고객센터(1588-8133)로 문의주시기 바랍니다.</p>
 			</div>
 		</div>
 	</div>
