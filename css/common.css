@@ -1,130 +1,92 @@
 @charset "UTF-8";
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-}
-
 header {
-  width: 1100px;
-  height: 100px;
-  margin: 0 auto;
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
 }
-
 .logo {
-  width: 140px;
-  height: 80px;
-  float: left;
-  margin: 0px;
+    width: 140px;
+    height: 80px;
+    float: left;
+    margin: 0;
 }
-
 .logo img {
-  float: left;
-  margin: 0 0 0 20px;
-  width: 200px;
-  height: 100px;
+    float: left;
+    margin: 0 0 0 20px;
+    width: 200px;
+    height: 100px;
 }
-
 nav {
-  width: 750px;
-  height: 30px;
-  float: right;
-  margin: 20px 30px 0 0;
+    width: 750px;
+    height: 30px;
+    float: right;
+    margin: 20px 30px 0 0;
 }
-
 nav ul {
-  font-weight: bold;
-  list-style: none;
+    font-weight: bold;
+    list-style: none;
 }
-
 nav ul li {
-  float: left;
-  margin: 5px 50px 0px 10px;
+    float: left;
+    margin: 5px 50px 0 10px;
 }
-
 nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
-
 nav ul li a:hover {
-  color: red;
+    color: red;
 }
 .icon {
-  position: relative;
-  top: 18px;
-  left: 450px;
-  margin: 0 auto;
-  width: 300px;
-  height: 0px;
+    position: relative;
+    top: 18px;
+    left: 450px;
+    margin: 0 auto;
+    width: 300px;
+    height: 0;
 }
-
 .icon img {
-  width: 30px;
-  height: 30px;
-  margin: 0 0 0 7px;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 7px;
 }
-
 .topbutton {
-  width: 64px;
-  height: 64px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: red;
-  z-index: 5;
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: red;
+    z-index: 5;
 }
-
-
-
 footer {
-  width: 1100px;
-  height: 150px;
-  margin: 0 auto;
+    width: 1100px;
+    height: 150px;
+    margin: 0 auto;
 }
-
 footer img {
-  width: 1100px;
-  height: 150px;
-  border-top: 1px solid #333;
-}
-
-a:link,
-a:active,
-a:visited,
-a:hover {
-  text-decoration: none;
-  color: black;
+    width: 1100px;
+    height: 150px;
+    border-top: 1px solid #333;
 }
 
 footer ul li {
-  float: left;
-  margin: 0 0 0 50px;
-  position: relative;
-  top: -150px;
-  left: -50px;
-  font-size: 12px;
-  list-style: none;
+    float: left;
+    margin: 0 0 0 50px;
+    position: relative;
+    top: -150px;
+    left: -50px;
+    font-size: 12px;
+    list-style: none;
 }
-
 .footred {
-  color: red;
-  font-weight: bold;
+    color: red;
+    font-weight: bold;
 }
-
 .footli {
-  font-weight: bold;
+    font-weight: bold;
 }
-
 footer ul {
-  line-height: 22px;
+    line-height: 22px;
 }
