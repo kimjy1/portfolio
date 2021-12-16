@@ -14,7 +14,7 @@
     height: 750px;
     background-color: black;
     margin: 20px;
-    background-image: url('img/sub_film.png'), url('img/sub_film.png');
+    background-image: url('../img/sub_film.png'), url('../img/sub_film.png');
     background-repeat: repeat-y;
     background-position: left top, right top;
     background-size: 15px;
